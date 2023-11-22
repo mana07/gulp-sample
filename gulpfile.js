@@ -40,31 +40,21 @@ const compileSass = () =>
  */
 const watchSassFiles = () => watch("css/style.scss", compileSass);
 
-// const taskServer = (done) => {
-//   browserSync.init({
-//    server: {
-//     baseDir:  "./",
-//    },
-//    startPath: "src/index.html",      // 開きたいパスを指定する
-//    notify: false,                    // ブラウザ更新時に出てくる通知を非表示にする
-//    open: "external",       
-//    port: 2000
-//   })
-//   done();
-// };
-
-// const taskReload = (done) => {
-//   browserSync.reload();
-//   done();
-// };
-
-// const taskWatch = (done) => {
-//   watch("./src/**", taskReload); 
-//   done();
-// }
-
 
 // npx gulpというコマンドを実行した時、watchSassFilesが実行されるようにします
 exports.default = watchSassFiles;
-// exports.default = parallel(taskServer, taskWatch);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
